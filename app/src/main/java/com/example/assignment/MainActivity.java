@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 btn2.setBackgroundResource(R.drawable.rounded_corners);
             }
         });
-       
+
 
         img[0]=findViewById(R.id.Picked);
         img[1]=findViewById(R.id.Onway);

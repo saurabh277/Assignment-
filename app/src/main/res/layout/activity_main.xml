@@ -13,12 +13,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:orientation="horizontal">
-        <TextView
+
+        <ImageView
             android:layout_width="28dp"
             android:layout_height="match_parent"
             android:gravity="start"
-            android:text=">"
-            android:textColor="@android:color/holo_red_dark"
+            android:src="@drawable/arrow"
+            android:tint="@android:color/holo_red_dark"
             android:textSize="20sp" />
         <TextView
             android:layout_width="match_parent"
@@ -330,6 +331,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:layout_marginStart="2dp"
         android:layout_height="wrap_content">
 
         <TextView
