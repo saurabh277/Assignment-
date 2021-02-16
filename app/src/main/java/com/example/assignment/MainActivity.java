@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.app.PendingIntent;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.Random;
@@ -20,8 +22,7 @@ import static android.app.PendingIntent.getActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    View view1,view2,view3;
-    Random ran=new Random();
+    Button btn,btn2,btn3;
     public  static final String TAG ="ASYNC";
     private int position=0;
     ImageView img[]=new ImageView[4];
@@ -30,6 +31,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btn=findViewById(R.id.btn);
+        btn2=findViewById(R.id.btn2);
+        btn3=findViewById(R.id.btn3);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),OfficeLocation.class);
+                startActivity(i);
+            }
+        });
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btn2.setEnabled(true);
+                btn2.setBackgroundResource(R.drawable.rounded_corners);
+            }
+        });
+       
+
         img[0]=findViewById(R.id.Picked);
         img[1]=findViewById(R.id.Onway);
         img[2]=findViewById(R.id.Delievered);

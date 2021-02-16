@@ -417,26 +417,50 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/openPhoneCall1"
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="52dp"
         android:layout_marginTop="5dp"
         android:drawableLeft="@drawable/target1"
         android:drawableTint="#ab47bc"
         android:text="Track Order" />
-
-    <Button
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="31dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
-        android:background="@drawable/rounded_corners"
-        android:text="Report Issue"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="150dp">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="37dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:clickable="false"
+            android:drawableTop="@android:drawable/alert_light_frame"
+            android:drawableTint="#F00"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="315dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:enabled="false"
+            android:text="Report Issue"
+            android:textColor="#FFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
 
 </LinearLayout>
