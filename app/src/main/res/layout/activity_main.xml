@@ -266,21 +266,26 @@
 
 
         <ImageView
+            android:id="@+id/Picked"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_gravity="center"
+            android:backgroundTint="#4fc3f7"
             android:layout_height="30dp"
             android:background="@android:drawable/presence_invisible"
             android:drawableTop="@drawable/ic_launcher_foreground" />
 
         <View
+            android:id="@+id/view1"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:background="#eeeeee"
             android:layout_height="2dp"
             android:layout_gravity="center"/>
         <ImageView
+            android:id="@+id/Onway"
             android:layout_width="0dp"
+            android:backgroundTint="#4db6ac"
             android:layout_weight="1"
             android:layout_gravity="center"
             android:layout_height="30dp"
@@ -288,29 +293,35 @@
             android:drawableTop="@drawable/ic_launcher_foreground" />
 
         <View
+            android:id="@+id/view2"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_gravity="center"
             android:background="#eeeeee"
             android:layout_height="2dp"/>
         <ImageView
+            android:id="@+id/Delievered"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_gravity="center"
+            android:backgroundTint="#f9a825"
             android:layout_height="30dp"
             android:background="@android:drawable/presence_invisible"
             android:drawableTop="@drawable/ic_launcher_foreground" />
 
         <View
+            android:id="@+id/view3"
             android:layout_width="0dp"
             android:layout_gravity="center"
             android:layout_weight="2"
             android:background="#eeeeee"
             android:layout_height="2dp"/>
         <ImageView
+            android:id="@+id/Done"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_gravity="center"
+            android:backgroundTint="#76ff03"
             android:layout_height="30dp"
             android:background="@android:drawable/presence_invisible"
             android:drawableTop="@drawable/ic_launcher_foreground" />
